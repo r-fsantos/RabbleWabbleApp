@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		88DA7CFC2B31BDDD00B92FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7CFB2B31BDDD00B92FDF /* AppDelegate.swift */; };
 		88DA7CFE2B31BDDD00B92FDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7CFD2B31BDDD00B92FDF /* SceneDelegate.swift */; };
-		88DA7D002B31BDDD00B92FDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7CFF2B31BDDD00B92FDF /* ViewController.swift */; };
+		88DA7D002B31BDDD00B92FDF /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7CFF2B31BDDD00B92FDF /* QuestionViewController.swift */; };
 		88DA7D032B31BDDD00B92FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DA7D012B31BDDD00B92FDF /* Main.storyboard */; };
 		88DA7D052B31BDDE00B92FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DA7D042B31BDDE00B92FDF /* Assets.xcassets */; };
 		88DA7D082B31BDDE00B92FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DA7D062B31BDDE00B92FDF /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		88DA7CF82B31BDDD00B92FDF /* RabbleWabbleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabbleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DA7CFB2B31BDDD00B92FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DA7CFD2B31BDDD00B92FDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88DA7CFF2B31BDDD00B92FDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88DA7CFF2B31BDDD00B92FDF /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		88DA7D022B31BDDD00B92FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88DA7D042B31BDDE00B92FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88DA7D072B31BDDE00B92FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,55 @@
 		88DA7CFA2B31BDDD00B92FDF /* RabbleWabbleApp */ = {
 			isa = PBXGroup;
 			children = (
-				88DA7CFB2B31BDDD00B92FDF /* AppDelegate.swift */,
-				88DA7CFD2B31BDDD00B92FDF /* SceneDelegate.swift */,
-				88DA7CFF2B31BDDD00B92FDF /* ViewController.swift */,
-				88DA7D012B31BDDD00B92FDF /* Main.storyboard */,
-				88DA7D042B31BDDE00B92FDF /* Assets.xcassets */,
-				88DA7D062B31BDDE00B92FDF /* LaunchScreen.storyboard */,
-				88DA7D092B31BDDE00B92FDF /* Info.plist */,
+				88DA7D112B31C16F00B92FDF /* AppDelegate */,
+				88DA7D122B31C19200B92FDF /* Controllers */,
+				88DA7D132B31C19E00B92FDF /* Models */,
+				88DA7D142B31C1AD00B92FDF /* Resources */,
+				88DA7D152B31C1B300B92FDF /* Views */,
 			);
 			path = RabbleWabbleApp;
+			sourceTree = "<group>";
+		};
+		88DA7D112B31C16F00B92FDF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				88DA7CFB2B31BDDD00B92FDF /* AppDelegate.swift */,
+				88DA7CFD2B31BDDD00B92FDF /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		88DA7D122B31C19200B92FDF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88DA7CFF2B31BDDD00B92FDF /* QuestionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		88DA7D132B31C19E00B92FDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88DA7D142B31C1AD00B92FDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88DA7D092B31BDDE00B92FDF /* Info.plist */,
+				88DA7D042B31BDDE00B92FDF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		88DA7D152B31C1B300B92FDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88DA7D012B31BDDD00B92FDF /* Main.storyboard */,
+				88DA7D062B31BDDE00B92FDF /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88DA7D002B31BDDD00B92FDF /* ViewController.swift in Sources */,
+				88DA7D002B31BDDD00B92FDF /* QuestionViewController.swift in Sources */,
 				88DA7CFC2B31BDDD00B92FDF /* AppDelegate.swift in Sources */,
 				88DA7CFE2B31BDDD00B92FDF /* SceneDelegate.swift in Sources */,
 			);
@@ -315,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YXQS68D56Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RabbleWabbleApp/Info.plist;
+				INFOPLIST_FILE = RabbleWabbleApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -343,7 +383,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YXQS68D56Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RabbleWabbleApp/Info.plist;
+				INFOPLIST_FILE = RabbleWabbleApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
