@@ -34,15 +34,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="or2-qJ-ygN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="or2-qJ-ygN" userLabel="Incorrect Button">
                                 <rect key="frame" x="32" y="653" width="104" height="94"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ic_circle_x"/>
+                                <connections>
+                                    <action selector="handleIncorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7i-PC-o7w"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuM-7j-ASH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuM-7j-ASH" userLabel="Correct Button">
                                 <rect key="frame" x="257" y="653" width="104" height="94"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ic_circle_check"/>
+                                <connections>
+                                    <action selector="handleCorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePR-pr-NyS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z18-Bd-fcN">
                                 <rect key="frame" x="299" y="754" width="20" height="39"/>
@@ -59,6 +65,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z18-Bd-fcN" secondAttribute="bottom" constant="24" id="00a-QD-Nvr"/>
                             <constraint firstItem="Z18-Bd-fcN" firstAttribute="centerX" secondItem="CuM-7j-ASH" secondAttribute="centerX" id="0qY-JL-67h"/>
@@ -84,10 +91,16 @@
                             <outlet property="hintLabel" destination="JcV-aR-8a0" id="BTC-vz-F3O"/>
                             <outlet property="incorrectCountLabel" destination="pP2-jc-BK3" id="5y2-l4-GEr"/>
                             <outlet property="promptLabel" destination="jua-Ne-r1r" id="QOd-wZ-B42"/>
+                            <outletCollection property="gestureRecognizers" destination="gws-Kx-Kf2" appends="YES" id="jR2-gz-5Qe"/>
                         </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gws-Kx-Kf2">
+                    <connections>
+                        <action selector="toggleAnswerLabels:" destination="BYZ-38-t0r" id="VYf-Ss-HaZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="138" y="5"/>
         </scene>
