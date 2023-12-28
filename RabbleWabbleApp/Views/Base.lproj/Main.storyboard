@@ -44,16 +44,16 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ic_circle_check"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-jc-BK3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z18-Bd-fcN">
+                                <rect key="frame" x="299" y="754" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-jc-BK3">
                                 <rect key="frame" x="74" y="755" width="20" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z18-Bd-fcN">
-                                <rect key="frame" x="299" y="755" width="20" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -61,20 +61,22 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z18-Bd-fcN" secondAttribute="bottom" constant="24" id="00a-QD-Nvr"/>
+                            <constraint firstItem="Z18-Bd-fcN" firstAttribute="centerX" secondItem="CuM-7j-ASH" secondAttribute="centerX" id="0qY-JL-67h"/>
                             <constraint firstItem="pP2-jc-BK3" firstAttribute="top" secondItem="or2-qJ-ygN" secondAttribute="bottom" constant="8" id="80W-oV-nys"/>
+                            <constraint firstItem="Z18-Bd-fcN" firstAttribute="top" secondItem="CuM-7j-ASH" secondAttribute="bottom" constant="8" id="M8j-CK-OXt"/>
                             <constraint firstItem="jua-Ne-r1r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NY0-Eo-ohH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jua-Ne-r1r" secondAttribute="trailing" id="Pfp-nN-EOD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pP2-jc-BK3" secondAttribute="bottom" constant="24" id="Qiz-SH-0vn"/>
                             <constraint firstItem="JcV-aR-8a0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S8f-nC-F9W"/>
-                            <constraint firstItem="Z18-Bd-fcN" firstAttribute="top" secondItem="CuM-7j-ASH" secondAttribute="bottom" constant="8" id="VOh-pJ-L6g"/>
                             <constraint firstItem="jua-Ne-r1r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Zen-yX-MSA"/>
                             <constraint firstItem="JcV-aR-8a0" firstAttribute="top" secondItem="jua-Ne-r1r" secondAttribute="bottom" constant="8" id="aX2-w2-S4B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CuM-7j-ASH" secondAttribute="trailing" constant="32" id="boY-Ga-geO"/>
                             <constraint firstItem="QCN-VP-Kfg" firstAttribute="top" secondItem="JcV-aR-8a0" secondAttribute="bottom" constant="50" id="c0l-ZV-rkf"/>
+                            <constraint firstItem="pP2-jc-BK3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="fPR-2d-uol"/>
                             <constraint firstItem="or2-qJ-ygN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="g2G-h9-HI4"/>
                             <constraint firstItem="QCN-VP-Kfg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kt7-R6-evj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JcV-aR-8a0" secondAttribute="trailing" id="lBo-DV-9DG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QCN-VP-Kfg" secondAttribute="trailing" id="myN-uT-nZo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CuM-7j-ASH" secondAttribute="trailing" constant="32" id="nKU-9J-hPI"/>
                         </constraints>
                         <connections>
                             <outlet property="answerLabel" destination="QCN-VP-Kfg" id="ryS-Wz-JCf"/>
