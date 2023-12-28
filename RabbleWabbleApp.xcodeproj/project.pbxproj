@@ -12,6 +12,7 @@
 		8829E3E22B3DF0D300EA97CB /* QuestionGroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829E3E12B3DF0D300EA97CB /* QuestionGroupData.swift */; };
 		8829E3E42B3DF18A00EA97CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8829E3E32B3DF18A00EA97CB /* Assets.xcassets */; };
 		8829E3E62B3DF19800EA97CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8829E3E52B3DF19800EA97CB /* LaunchScreen.storyboard */; };
+		8829E3E82B3DF25D00EA97CB /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829E3E72B3DF25D00EA97CB /* QuestionView.swift */; };
 		88DA7CFC2B31BDDD00B92FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7CFB2B31BDDD00B92FDF /* AppDelegate.swift */; };
 		88DA7CFE2B31BDDD00B92FDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7CFD2B31BDDD00B92FDF /* SceneDelegate.swift */; };
 		88DA7D002B31BDDD00B92FDF /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7CFF2B31BDDD00B92FDF /* QuestionViewController.swift */; };
@@ -24,6 +25,7 @@
 		8829E3E12B3DF0D300EA97CB /* QuestionGroupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupData.swift; sourceTree = "<group>"; };
 		8829E3E32B3DF18A00EA97CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8829E3E52B3DF19800EA97CB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8829E3E72B3DF25D00EA97CB /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		88DA7CF82B31BDDD00B92FDF /* RabbleWabbleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabbleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DA7CFB2B31BDDD00B92FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DA7CFD2B31BDDD00B92FDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				8829E3E52B3DF19800EA97CB /* LaunchScreen.storyboard */,
 				88DA7D012B31BDDD00B92FDF /* Main.storyboard */,
+				8829E3E72B3DF25D00EA97CB /* QuestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				88DA7D002B31BDDD00B92FDF /* QuestionViewController.swift in Sources */,
 				8829E3DE2B3DEFD000EA97CB /* Question.swift in Sources */,
 				88DA7CFC2B31BDDD00B92FDF /* AppDelegate.swift in Sources */,
+				8829E3E82B3DF25D00EA97CB /* QuestionView.swift in Sources */,
 				8829E3E22B3DF0D300EA97CB /* QuestionGroupData.swift in Sources */,
 				8829E3E02B3DF02300EA97CB /* QuestionGroup.swift in Sources */,
 				88DA7CFE2B31BDDD00B92FDF /* SceneDelegate.swift in Sources */,
